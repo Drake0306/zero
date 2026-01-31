@@ -1,0 +1,122 @@
+/* Fluent Design System 2 — CSS Custom Properties */
+
+:root {
+  /* Brand colors */
+  --brand-primary: #0f6cbd;
+  --brand-primary-hover: #115ea3;
+  --brand-primary-active: #0c3b5e;
+  --brand-primary-text: #ffffff;
+
+  /* Neutral palette */
+  --neutral-background-1: #ffffff;
+  --neutral-background-2: #fafafa;
+  --neutral-background-3: #f5f5f5;
+  --neutral-background-4: #ebebeb;
+  --neutral-background-subtle: transparent;
+  --neutral-background-subtle-hover: #f5f5f5;
+  --neutral-background-subtle-active: #e0e0e0;
+
+  --neutral-foreground-1: #242424;
+  --neutral-foreground-2: #616161;
+  --neutral-foreground-3: #9e9e9e;
+  --neutral-foreground-disabled: #bdbdbd;
+
+  --neutral-stroke-1: #d1d1d1;
+  --neutral-stroke-2: #e0e0e0;
+  --neutral-stroke-accessible: #616161;
+
+  /* Typography */
+  --font-family-base: 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+
+  --font-size-100: 10px;
+  --font-size-200: 12px;
+  --font-size-300: 14px;
+  --font-size-400: 16px;
+  --font-size-500: 20px;
+  --font-size-600: 24px;
+  --font-size-700: 28px;
+  --font-size-800: 32px;
+  --font-size-900: 40px;
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-100: 14px;
+  --line-height-200: 16px;
+  --line-height-300: 20px;
+  --line-height-400: 22px;
+  --line-height-500: 28px;
+  --line-height-600: 32px;
+
+  /* Spacing */
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 24px;
+  --spacing-xxxl: 32px;
+
+  /* Border radius */
+  --radius-none: 0;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 8px;
+  --radius-xlarge: 12px;
+  --radius-circular: 50%;
+
+  /* Shadows */
+  --shadow-2: 0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-4: 0 2px 4px rgba(0, 0, 0, 0.14);
+  --shadow-8: 0 4px 8px rgba(0, 0, 0, 0.14);
+  --shadow-16: 0 8px 16px rgba(0, 0, 0, 0.14);
+  --shadow-28: 0 14px 28px rgba(0, 0, 0, 0.18);
+  --shadow-64: 0 32px 64px rgba(0, 0, 0, 0.22);
+
+  /* Durations */
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+
+  /* Curves */
+  --curve-easy-ease: cubic-bezier(0.33, 0, 0.67, 1);
+  --curve-decelerate: cubic-bezier(0, 0, 0, 1);
+  --curve-accelerate: cubic-bezier(1, 0, 1, 1);
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand-primary: #479ef5;
+    --brand-primary-hover: #62abf5;
+    --brand-primary-active: #96c6fa;
+    --brand-primary-text: #000000;
+
+    --neutral-background-1: #292929;
+    --neutral-background-2: #1f1f1f;
+    --neutral-background-3: #141414;
+    --neutral-background-4: #0a0a0a;
+    --neutral-background-subtle: transparent;
+    --neutral-background-subtle-hover: #383838;
+    --neutral-background-subtle-active: #404040;
+
+    --neutral-foreground-1: #ffffff;
+    --neutral-foreground-2: #d6d6d6;
+    --neutral-foreground-3: #adadad;
+    --neutral-foreground-disabled: #5c5c5c;
+
+    --neutral-stroke-1: #404040;
+    --neutral-stroke-2: #383838;
+    --neutral-stroke-accessible: #adadad;
+
+    --shadow-2: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-4: 0 2px 4px rgba(0, 0, 0, 0.48);
+    --shadow-8: 0 4px 8px rgba(0, 0, 0, 0.48);
+    --shadow-16: 0 8px 16px rgba(0, 0, 0, 0.48);
+    --shadow-28: 0 14px 28px rgba(0, 0, 0, 0.56);
+    --shadow-64: 0 32px 64px rgba(0, 0, 0, 0.64);
+  }
+}
